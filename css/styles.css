@@ -183,7 +183,7 @@ body {
   padding-bottom: 200px;
   color: var(--white);
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 04), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -264,6 +264,9 @@ body {
   width: 70px;
 }
 /*Сервіси*/
+.services {
+  padding-top: 0;
+}
 .services-title,
 .team-title {
   font-weight: 700;
@@ -300,6 +303,7 @@ body {
 }
 .team .position {
   color: var(--grey);
+  margin-bottom: 16px;
 }
 .team-list {
   display: flex;
@@ -321,8 +325,7 @@ body {
   background-color: var(--white);
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 32px;
+  
 }
 .team-link {
   display: flex;
@@ -333,10 +336,12 @@ body {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  
   margin-left: 10px;
 }
-
+.team-link:nth-child(:first-child){
+  margin-left: 0;
+}
 .social-links {
   display: flex;
   justify-content: center;
@@ -362,11 +367,12 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
+  margin-bottom: 50px;
 }
 .clients-card {
   display: flex;
-  margin-top: 50px;
-}
+  }
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -374,12 +380,15 @@ body {
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
-  margin-right: var(--list-gap);
   width: 170px;
   height: 90px;
   cursor: pointer;
 }
-.clients-list:nth-child(6n) {
+.clients-list{
+  margin-right: 30px;
+}
+
+.clients-list:last-child {
   margin-right: 0px;
 }
 
@@ -387,9 +396,10 @@ body {
 .clients-link:focus {
   color: var(--blue);
   border: 1px solid var(--blue);
+  fill: var(--blue);
 }
 .clients-icon {
-  width: 160px;
+  width: 106px;
   height: 60px;
   fill: currentColor;
 }
@@ -461,11 +471,16 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  color: #afb1b8;
+  color: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
+ 
+}
+.social-list{ 
   margin-right: 10px;
 }
-
+.social-list:last-child{
+  margin-right: o;
+}
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--blue);
