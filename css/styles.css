@@ -336,9 +336,7 @@ body {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  
-  margin-left: 10px;
-}
+ }
 .team-link:nth-child(:first-child){
   margin-left: 0;
 }
@@ -395,8 +393,8 @@ body {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--blue);
-  border: 1px solid var(--blue);
-  fill: var(--blue);
+  border-color: var(--blue);
+  
 }
 .clients-icon {
   width: 106px;
@@ -478,7 +476,8 @@ body {
 .social-list{ 
   margin-right: 10px;
 }
-.social-list:last-child{
+.social-list:nth-child(:last-child)
+{
   margin-right: o;
 }
 .footer-link:hover,
